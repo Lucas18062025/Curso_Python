@@ -52,20 +52,3 @@ python piedrapapel.py
 | `sec_enc.py` | Hash de contraseña con `scrypt` (salt aleatorio) |
 | `inventario.csv` | Datos de ejemplo (producto, precio, stock) |
 
-## Experimento API (FastAPI)
-
-- `main.py`: endpoint `/estado_actual` que devuelve hora local de Tucumán y
-  datos de clima hardcodeados.
-- `lanzador.py`: busca un puerto libre entre `[8600, 8700, 8800, 8900]` y
-  levanta `uvicorn main:app` con `--ssl-keyfile=key.pem --ssl-certfile=cert.pem`.
-  Esos certificados no están en el repo (ver nota de seguridad) y hay que
-  generarlos localmente para que el lanzador funcione.
-- `Untitled-1.py`: notas de instalación (`fastapi`, `uvicorn`) y el comando
-  para levantar el servidor manualmente.
-
-## Nota de seguridad
-
-El `.gitignore` ignora `*.pem`, `*.key` y `.env` porque se purgaron claves
-reales del historial del repo (commit `b3abfd1`). Si esas credenciales
-estuvieron expuestas en algún momento, deben considerarse comprometidas y
-rotarse; purgar el historial de git no revoca una clave ya filtrada.
