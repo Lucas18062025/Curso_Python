@@ -1,0 +1,4 @@
+# Solo main.py (experimento FastAPI) las necesita.
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pytz>=2024.1

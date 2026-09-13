@@ -1,4 +1,4 @@
-# Curso.py
+# Python Fundamentos
 
 Curso práctico de Python: fundamentos (variables, strings, condicionales,
 bucles, listas) y una serie de mini-proyectos (juegos, calculadoras
@@ -8,8 +8,8 @@ FastAPI). Cada archivo se ejecuta de forma independiente con `python <archivo>.p
 ## Requisitos
 
 - Python 3.10 o superior.
-- Para `main.py`, `Untitled-1.py` y `lanzador.py`: `fastapi`, `uvicorn` y `pytz`
-  (no incluidos en el repo; instalar con `pip install fastapi uvicorn pytz`).
+- Solo `main.py` requiere dependencias externas: `pip install -r requirements.txt`
+  (`fastapi`, `uvicorn`, `pytz`). Todo lo demás es stdlib puro.
 
 ## Uso
 
